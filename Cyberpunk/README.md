@@ -1,7 +1,7 @@
 # Cybersecurity Awareness Chatbot
 This is a C# console application built for PROG6221. It educates users on phishing, password safety, and safe browsing.
 
-## How to Run
+## This is how to run itt
 1. Clone this repository to your local machine.
 2. Open the solution in Visual Studio.
 3. Ensure you are using .NET 8.0.

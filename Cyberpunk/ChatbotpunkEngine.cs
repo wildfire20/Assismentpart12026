@@ -4,20 +4,20 @@ namespace Cyberpunk
 {
     public class ChatbotpunkEngine
     {
-        // This method takes what the user typed and figures out how to answer
+        
         public string GetResponse(string input)
         {
-            // --- QUESTION 5: Input Validation ---
-            // Detect invalid inputs (empty entries) gracefully
+// Input Validation
+            // will detect invalid inputs 
             if (string.IsNullOrWhiteSpace(input))
             {
                 return "I didn't quite understand that. Could you rephrase?";
             }
 
-            // Convert input to lowercase so it's easier to search for keywords fdegddvt ghd dtrd gwfdtvd fyd ydf
+            //Convert input to lowercase so it's easier to search for keywords 
             string lowerInput = input.ToLower();
 
-            // --- QUESTION 4: Basic User Interaction ---
+            // basic user Interaction;
             if (lowerInput.Contains("how are you"))
             {
                 return "I'm functioning perfectly! Ready to talk about cybersecurity.";
@@ -31,7 +31,7 @@ namespace Cyberpunk
                 return "You can ask me about password safety, phishing, or safe browsing.";
             }
 
-            // --- QUESTION 4: Cybersecurity Topics ---
+            //Cybersecurity Topics
             else if (lowerInput.Contains("password"))
             {
                 return "Password Safety: Always use a strong, unique password (at least 12 characters). Consider using a password manager and enabling Two-Factor Authentication (2FA).";
@@ -45,7 +45,7 @@ namespace Cyberpunk
                 return "Safe Browsing: Look for 'https://' in the URL and a padlock icon. Avoid entering sensitive info on public Wi-Fi networks.";
             }
 
-            // --- QUESTION 5: Default Response for unsupported queries ---
+            //default response for unsupported queistions 
             else
             {
                 return "I didn't quite understand that. Could you rephrase? (Try asking about passwords, phishing, or safe browsing).";

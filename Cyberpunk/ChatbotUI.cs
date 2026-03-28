@@ -5,19 +5,20 @@ namespace Cyberpunk
 {
     public class ChatbotUI
     {
-        // This method handles Question 2: ASCII Logo and Question 6: Colors
+        // This method handles THE ASCII Logo and Question 
         public void DisplayWelcomeScreen()
         {
             Console.Clear(); // Clears the screen for a fresh start
             Console.ForegroundColor = ConsoleColor.Cyan;
 
-            // Raw string literal for easy ASCII art
+            //ASCII art
             string logo = @"
-   _____       __               ____        __ 
-  / ___/__  __/ /_  ___  ____  / __ )____  / /_
-  \__ \/ / / / __ \/ _ \/ __ \/ __  / __ \/ __/
- ___/ / /_/ / /_/ /  __/ / / / /_/ / /_/ / /_  
-/____/\__,_/_.___/\___/_/ /_/_____/\____/\__/  
+  ____      _                               _    ____   ___ _____ 
+ / ___|   _| |__   ___ _ __ _ __  _   _ _ __ | | _| __ ) / _ \_   _|
+| |  | | | | '_ \ / _ \ '__| '_ \| | | | '_ \| |/ /  _ \| | | || |  
+| |__| |_| | |_) |  __/ |  | |_) | |_| | | | |   <| |_) | |_| || |  
+ \____\__, |_.__/ \___|_|  | .__/ \__,_|_| |_|_|\_\____/ \___/ |_|  
+      |___/                |_|                                      
             ";
 
             Console.WriteLine(logo);
@@ -30,14 +31,14 @@ namespace Cyberpunk
             Console.ResetColor();
         }
 
-        // This method handles Question 6: Typing effect
+        // This method handles Typing effect
         public void TypeMessage(string message, ConsoleColor color = ConsoleColor.White)
         {
             Console.ForegroundColor = color;
             foreach (char c in message)
             {
                 Console.Write(c);
-                Thread.Sleep(30); // Pauses for 30 milliseconds between each letter
+                Thread.Sleep(30); // Pauses for 30 ms 
             }
             Console.WriteLine(); // Drops to the next line when finished
             Console.ResetColor();

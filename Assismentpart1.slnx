@@ -1,1 +1,6 @@
-<Solution />
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="../../../Downloads/greeting bot.wav" />
+  </Folder>
+  <Project Path="Cyberpunk/Cyberpunk.csproj" Id="a656445e-8436-49ee-8db5-0cdb16e867ae" />
+</Solution>
